@@ -12,5 +12,3 @@ vim.opt.autoread = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
-
---vim.opt.paths.{'rg'} = { '<C:\Users\PrincePC\AppData\Local\nvim-data\user-plugins\ripgrep>' }
