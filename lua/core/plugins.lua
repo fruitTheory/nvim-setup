@@ -53,8 +53,17 @@ return packer.startup(function(use)
   --which-key
   use 'folke/which-key.nvim'
 
-  -- Mason
-  use "williamboman/mason.nvim"
+  -- Mason - lsp's
+  use 'williamboman/mason.nvim'
+  use "williamboman/mason-lspconfig.nvim"
+  use "neovim/nvim-lspconfig"
+  
+  -- Completion
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+  use 'hrsh7th/nvim-cmp'
   
   -- Telescope dependencies
   -- use 'nvim-lua/plenary.nvim'
