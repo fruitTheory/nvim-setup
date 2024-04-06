@@ -12,3 +12,7 @@ vim.opt.autoread = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
+
+-- No swap files and add line numbers
+vim.opt.swapfile = false
+vim.opt.number = true

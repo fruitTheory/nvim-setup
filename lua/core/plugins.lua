@@ -42,13 +42,13 @@ packer.init({
 return packer.startup(function(use)
 
   -- Have packer manage itself
-	use 'wbthomason/packer.nvim'
+  use 'wbthomason/packer.nvim'
 	
-	-- file tree
-	use 'nvim-tree/nvim-tree.lua'
+  -- file tree
+  use 'nvim-tree/nvim-tree.lua'
 
-	--nvim-web-devicons
-	use 'nvim-tree/nvim-web-devicons'
+  --nvim-web-devicons
+  use 'nvim-tree/nvim-web-devicons'
 
   --which-key
   use 'folke/which-key.nvim'
@@ -64,6 +64,7 @@ return packer.startup(function(use)
   use 'hrsh7th/cmp-path'
   use 'hrsh7th/cmp-cmdline'
   use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/vim-vsnip'
   
   -- Telescope dependencies
   -- use 'nvim-lua/plenary.nvim'
@@ -76,9 +77,11 @@ return packer.startup(function(use)
 -- or                            , branch = '0.1.x',
   requires = { {'nvim-lua/plenary.nvim'} }
 }
-
-  use 'junegunn/seoul256.vim'
-
+  
+  -- colorschemes
+  use 'rafi/awesome-vim-colorschemes'
+  use 'polirritmico/monokai-nightasty.nvim'
+  
 	if PACKER_BOOTSTRAP then
 		require('packer').sync()
 	end
