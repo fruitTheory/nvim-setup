@@ -8,11 +8,14 @@ vim.opt.showcmd = true
 vim.opt.laststatus = 2
 vim.opt.autoread = true
 
--- use space for tabs
+-- num of spaces and size of indent <<
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
-vim.opt.expandtab = true
+vim.opt.expandtab = true -- spaces not tab
 
--- No swap files and add line numbers
-vim.opt.swapfile = false
+-- indentation
+vim.opt.autoindent = true
+vim.opt.cindent = true 
+
+-- Add line numbers
 vim.opt.number = true
